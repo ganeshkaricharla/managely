@@ -1,0 +1,161 @@
+.sidebar {
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+
+.links a {
+  margin: 5px;
+}
+
+.searchLink {
+  display: block;
+  margin-bottom: 15px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.searchLink:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.breadcrumbs span {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs span:hover {
+  color: #0066cc;
+}
+
+.createProjectButton {
+  background-color: #0066cc;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.createProjectButton:hover {
+  background-color: #0052a3;
+}
+
+.createProjectForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: #5ca0ff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.createProjectContainer {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 50px; /* Default height for button only */
+  opacity: 1;
+}
+
+.createProjectContainer.expanded {
+  max-height: 200px; /* Expanded height for form */
+  opacity: 1;
+}
+
+.createProjectContainer.collapsing {
+  max-height: 50px; /* Collapsing back to button only */
+  opacity: 0;
+}
+
+.createProjectContainer.expanded .createProjectForm {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.createProjectFormRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.createProjectFormRow.buttons {
+  justify-content: flex-end;
+}
+
+.createProjectForm input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+.createProjectForm button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.createProjectForm button:last-child {
+  margin-right: 0;
+}
+
+.createProjectForm button:hover {
+  background-color: #0052a3;
+}
+
+.projectList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.projectItem {
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.projectItem:hover {
+  background-color: #d9d9d9;
+}

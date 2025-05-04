@@ -1,0 +1,110 @@
+/* Styles for the Task component */
+.taskCard {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  cursor: pointer;
+  /* height: fit-content; */
+  /* max-height: 50px; */
+  height: 60px;
+}
+
+.taskCard:hover {
+  /* transform: translateY(-0.5px); */
+  transform: scale(1.01);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.taskName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.taskcard_low {
+  border-left: 5px solid #28a745aa;
+  padding-left: 8px;
+}
+.taskcard_medium {
+  border-left: 5px solid #ffc107aa;
+  padding-left: 8px;
+}
+.taskcard_high {
+  border-left: 5px solid #dc3545aa;
+  padding-left: 8px;
+}
+
+.taskcard_pending {
+  background-color: #fdeedc;
+}
+.taskcard_inprogress {
+  background-color: #dff5fa;
+}
+.taskcard_completed {
+  background-color: #eaf7eb;
+}
+.taskcard_deferred {
+  background-color: #fde8e8;
+}
+
+.taskStatus,
+.taskPriority {
+  width: fit-content;
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  border-radius: 4px;
+  height: fit-content;
+}
+.taskPills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskPills p {
+  margin: 0 5px;
+}
+
+.taskstatus_pending {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+.taskstatus_inprogress {
+  background-color: #5bc0de;
+  color: #fff;
+}
+.taskstatus_completed {
+  background-color: #5cb85c;
+  color: #fff;
+}
+.taskstatus_deferred {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.taskpriority_low {
+  background-color: #28a745;
+  color: #fff;
+}
+.taskpriority_medium {
+  background-color: #ffc107;
+  color: #fff;
+}
+.taskpriority_high {
+  background-color: #dc3545;
+  color: #fff;
+}

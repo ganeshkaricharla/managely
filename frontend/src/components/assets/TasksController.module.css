@@ -1,0 +1,61 @@
+.container {
+  background-color: #dee7f7;
+  width: 100%;
+  height: 100vh;
+  padding: 3%;
+  margin: 0;
+}
+
+.title {
+  width: 90%;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.title_description {
+  width: 90%;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.noTasks {
+  font-size: 1.5em;
+  margin: 10px;
+  color: #333333d9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.task_controller_button {
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  /* background-color: #abcaff; */
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.5em;
+  color: rgb(7, 18, 228);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task_controller_button:hover {
+  background-color: #92b8f7;
+  transform: scale(1.05);
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #333;
+}

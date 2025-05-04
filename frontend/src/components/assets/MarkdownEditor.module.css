@@ -1,0 +1,108 @@
+.editor {
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #dee7f7;
+  color: #141414;
+  font-family: "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  width: 100%;
+}
+
+.controls {
+  border-bottom: #141414 1px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #0059ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a5261;
+}
+
+.textarea {
+  width: 100%;
+  height: calc(100vh - 140px);
+  border: 1px solid #3a404b;
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 10px;
+  font-family: "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  overflow-wrap: break-word; /* Modern browsers */
+}
+
+.preview {
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: larger;
+}
+
+.preview h1,
+.preview h2,
+.preview h3,
+.preview h4,
+.preview h5,
+.preview h6 {
+  color: #4e00ea;
+  font-weight: bold;
+}
+
+.preview a {
+  color: #61afef;
+  text-decoration: none;
+}
+
+.preview a:hover {
+  text-decoration: underline;
+}
+
+.preview code {
+  /* background-color: #3a404b; */
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.preview pre {
+  background-color: #d0d5dd;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.preview blockquote {
+  border-left: 4px solid #61afef;
+  padding-left: 15px;
+  /* color: #5c6370; */
+}
+
+/* Existing styles... */
+
+.mermaidDiagram {
+  margin: 20px 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.mermaidDiagram svg {
+  max-width: 100%;
+}

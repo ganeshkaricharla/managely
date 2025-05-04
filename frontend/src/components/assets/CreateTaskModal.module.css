@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  z-index: 1000;
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  z-index: 999; /* Ensure it is behind the modal */
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+input[type="date"] {
+  text-align: left;
+}
+
+input[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}

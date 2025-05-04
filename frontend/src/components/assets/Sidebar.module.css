@@ -1,0 +1,137 @@
+.sidebar {
+  width: 40%;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+.links a {
+  margin: 5px;
+}
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.breadcrumbs span {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs span:hover {
+  color: #0066cc;
+}
+
+.breadcrumbSeparator {
+  margin: 0 5px;
+  color: #999;
+}
+
+.fileTree {
+  list-style-type: none;
+  padding: 0;
+}
+
+.folderItem,
+.fileItem {
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.folderItem {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.fileItem {
+  background-color: #ffffff;
+}
+
+.folderItem:hover,
+.fileItem:hover {
+  background-color: #d9d9d9;
+}
+
+.createOptions {
+  margin-bottom: 15px;
+}
+
+.createOptions button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.createOptions button:hover {
+  background-color: #0052a3;
+}
+
+.modal {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.modal button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.modal button:hover {
+  background-color: #0052a3;
+}
+
+.searchLink {
+  display: block;
+  margin-bottom: 15px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.searchLink:hover {
+  text-decoration: underline;
+}

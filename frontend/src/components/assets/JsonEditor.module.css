@@ -1,0 +1,45 @@
+.editor {
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #dee7f7;
+  color: #141414;
+  font-family: "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  width: 100%;
+}
+
+.controls {
+  border-bottom: #141414 1px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #0059ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a5261;
+}
+
+.textarea {
+  width: 100%;
+  height: calc(100vh - 140px);
+  border: 1px solid #3a404b;
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 10px;
+  font-family: "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  overflow-wrap: break-word; /* Modern browsers */
+}
