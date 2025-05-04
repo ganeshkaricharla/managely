@@ -39,11 +39,11 @@ Managely is a comprehensive tool that helps you write the notes, and manages the
 
 ## Technologies Used
 
-- **Frontend**: React, Redux, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT
-- **Deployment**: Docker, AWS
+- **Frontend**: React
+- **Backend**: python
+- **Database**: None
+- **Authentication**: None
+- **Deployment**: None
 
 ## Contributing
 
